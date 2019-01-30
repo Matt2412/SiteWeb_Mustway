@@ -1,0 +1,23 @@
+##############################################################
+Fichier d'aide pour utiliser le site exemple "serial-critique"
+Enseignement BDW1 - Bases de données et programmation web
+Fabien Duchateau, Université Claude Bernard Lyon 1 - 2016
+##############################################################
+
+Pour utiliser ce site, quatre étapes :
+
+- déplacer le répertoire "serial-critique" (qui contient entre autre ce fichier) dans le répertoire public de XAMPP (généralement "xampp/htdocs/").
+
+- démarrer XAMPP (Apache + MySQL/MariaDB), puis lancer PHPMyAdmin, choisir l'onglet "SQL", et créer la base de données "BD_Serie-critique" avec 6 tables (script SQL dans le PDF).
+
+- éditer le fichier "./inc/constantes.php" et modifier les constantes "UTILISATRICE" et "MOTDEPASSE" si nécessaire. Ces constantes représentent respectivement le login et le mot de passe de connexion à MariaDB.
+Valeurs par défaut sous Windows (vides) :
+    * login =
+    * password =
+Valeurs par défaut sous Linux/Mac (password à vide) :
+    * login = root
+    * password =
+
+- ouvrir un navigateur et saisir l'url "http://localhost/serial-critique/"
+(ou "http://localhost:8080/serial-critique/" selon la configuration du port)
+
